@@ -16,10 +16,10 @@ $(document).on("ready change", function(){
     }
 
     if ($("#email").val() == "" && $("#newsletter").prop('checked')){
-        $("#emailMandatory").hide();
-    }else{
         $("#emailMandatory").show();
         correct = false;
+    }else{
+        $("#emailMandatory").hide();
     }
 
     if ($("#mediaChannelSelect").val() == "Other"){
